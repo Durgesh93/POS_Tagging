@@ -1,0 +1,18 @@
+Epoch: 1
+Training Loss: 1.612752344363775, Accuracy: 95
+Epoch: 2
+Training Loss: 0.18649058789014816, Accuracy: 96
+Epoch: 3
+Training Loss: 0.08716490086263572, Accuracy: 97
+Epoch: 4
+Training Loss: 0.060286035331395954, Accuracy: 97
+Epoch: 5
+Training Loss: 0.06380646881193687, Accuracy: 98
+Epoch: 6
+Training Loss: 0.0414385589508292, Accuracy: 98
+Epoch: 7
+Training Loss: 0.0407493182290823, Accuracy: 98
+Epoch: 8
+Training Loss: 0.03064897919121461, Accuracy: 98
+Epoch: 9
+Training Loss: 0.026829595868595135, Accuracy: 98

@@ -1,0 +1,1119 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{amsmath,xparse}
+\usepackage{color}
+\usepackage{float}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{0.7cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+centering      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+large 
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+Large
+\backslash
+bf 
+\backslash
+textbf{Parts of Speech Tagging using GRU}}
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{2cm} 
+\backslash
+bf{A}
+\backslash
+
+\backslash
+ 
+\backslash
+bf{Mini Project Report}
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0.25cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0.1cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+it by 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{.5cm} 
+\backslash
+rm {
+\backslash
+large 
+\backslash
+bf {Durgesh Kumar Singh(SC18M002)}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{1cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.50]{iist.jpg}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{1cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+Department of Mathematics
+\backslash
+
+\backslash
+  Indian Institute of Space Science and Technology, Trivandrum
+\backslash
+
+\backslash
+
+\backslash
+Large{Semester-II}
+\backslash
+
+\backslash
+ }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak  
+\backslash
+end{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage 
+\backslash
+tableofcontents
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage 
+\backslash
+listoffigures 
+\backslash
+listoftables 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+In Part of Speech (POS) tagging, association of a word in a sentence is
+ done to a corresponding part of a speech tag, based on its context and
+ definition.
+ POS Tags are useful for building parse trees, which are used in building
+ NERs (most named entities are Nouns) and extracting relations between words.
+ POS Tagging is also essential for building lemmatizers which are used to
+ reduce a word to its root form.
+\end_layout
+
+\begin_layout Section
+Techniques for POS Tagging
+\end_layout
+
+\begin_layout Standard
+The different POS tagging techniques are as follows-
+\end_layout
+
+\begin_layout Enumerate
+Lexical Based Methods
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Lexical based methods assign POS tags by frequency of the word in the training
+ corpus.The tag encountered in training set most frequently with the word
+ is assigned as tag for the word.
+ This approach has a problem that it may yield invalid sequences of tags.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rule-Based Methods
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Assign POS tags based on rules.
+ Rule based technique can be used along with lexical based approach to allow
+ POS tagging.
+ It is more useful when data is not present in training corpus but occured
+ in testing data.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Probabilistic Methods
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+This method assigns the POS tags based on the probability of a particular
+ tag sequence occurring.
+ There are several approaches for proability based models like :Conditional
+ Random Fields (CRFs) and Hidden Markov Models (HMMs)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Deep Learning Methods—Recurrent Neural Networks can also be used for POS
+ tagging.
+\end_layout
+
+\begin_layout Section
+Background
+\end_layout
+
+\begin_layout Subsection
+Recurrent Neural Network
+\end_layout
+
+\begin_layout Standard
+Recurrent Neural Networks(RNN) are networks which persist information.
+ RNN are able to remember context from the previous input.
+ RNN's are used in various time series analysis task i.e next word prediction,
+ music composition, image captioning, speech recognition, time series anomaly
+ detection, stock market prediction etc.
+\end_layout
+
+\begin_layout Standard
+However, RNN’s suffer from short-term memory.
+ If a sequence is long enough, it is difficult of RNN in carrying the informatio
+n from the earlier time-steps to later ones.
+ This is called the Vanishing Gradient Problem.
+ Gated Recurrent Unit(GRU) and Long Short Term Memory(LSTM) were introduced
+ to solve this issue.
+\end_layout
+
+\begin_layout Subsection
+Structure of GRU Cell
+\end_layout
+
+\begin_layout Standard
+GRU’s and LSTM’s have repeating modules like the RNN, but the repeating
+ modules have a different structure.
+ The key idea to GRU is the cell state or memory cell.
+ It allows it to retain any information without much loss.
+ It also has gates, which help to regulate the flow of information to the
+ cell state.
+ These gates can learn which data in a sequence is important and which is
+ not.
+ By doing that, they pass information in long sequences.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename rpasted1.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Structure of GRU cell
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The architecture of a GRU cell is complex than a simple RNN Cell.
+ The first thing we need to notice in a GRU cell is that the cell state
+ 
+\begin_inset Formula $h_{t}$
+\end_inset
+
+ is equal to the output at time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ We can see equations in GRU cell as follows-
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tilde{h}_{t}=tanh(W\cdot[r_{t}\ast h_{t-1},x_{t}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At each time step we have two options-
+\end_layout
+
+\begin_layout Enumerate
+Retain the previous cell state.
+\end_layout
+
+\begin_layout Enumerate
+Update its value.
+\end_layout
+
+\begin_layout Standard
+The above equation shows the updated value or candidate which can replace
+ the cell state at time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ It is dependent on the cell state at previous timestep 
+\begin_inset Formula $h_{t-1}$
+\end_inset
+
+and a relevance gate called 
+\begin_inset Formula $r_{t}$
+\end_inset
+
+, which calculates the relevance of previous cell state in the calculation
+ of current cell state.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{t}=\sigma(W_{r}\cdot[h_{t-1},x_{t}])
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see, the relevance gate 
+\begin_inset Formula $r_{t}$
+\end_inset
+
+has a sigmoid activation, which has the value between 0 and 1, which decides
+ how relevant the previous information is, and then is used in the candidate
+ for the updated value.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h_{t}=(1-z_{t})\odot h_{t-1}+z_{t}\odot\tilde{h_{t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The current cell state 
+\begin_inset Formula $h_{t}$
+\end_inset
+
+ is a filtered combination of the previous cell state 
+\begin_inset Formula $h_{t-1}$
+\end_inset
+
+ and the updated candidate 
+\begin_inset Formula $\tilde{h_{t}}$
+\end_inset
+
+.
+ The update gate 
+\begin_inset Formula $z_{t}$
+\end_inset
+
+ here decides the portion of updated candidate needed to calculate the current
+ cell state, which in turn also decides the portion of the previous cell
+ state retained.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z_{t}=\sigma(W_{z}\cdot[h_{t-1},x_{t}])
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Like the relevance gate, the update gate is also a sigmoid function, which
+ helps the GRU in retaining the cell state as long as it is needed.
+\end_layout
+
+\begin_layout Section
+Implementation details
+\end_layout
+
+\begin_layout Subsection
+Cell Structure
+\end_layout
+
+\begin_layout Standard
+The purpose of this project is to learn how to implement GRU cell and compare
+ different types of mutations of GRU cell on the task of POS Tagging using
+ Brown and PennTreebank dataset.
+ The implementation includes
+\end_layout
+
+\begin_layout Enumerate
+An implementation of GRU cell
+\end_layout
+
+\begin_layout Enumerate
+Mutations of original GRU cell by changing equation of relevance and update
+ gate.
+ The mutations can be defined as follows
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+MUT 1
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $z=\sigma(W_{z}\cdot x_{t}+b_{z})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r=\sigma(W_{r}\cdot x_{t}+W_{r}\cdot h_{t}+b_{r})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h_{t+1}=tanh(W_{h}[r\odot h_{t}]+tanh(x_{t})+b_{h})\cdot z+h_{t}\odot(1−z)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+MUT 2
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $z=\sigma(W_{z}x_{t}+W_{z}h_{t}+b_{z})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r=\sigma(x_{t}+W_{r}h_{t}+b_{r})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h_{t+1}=tanh(W_{h}[r\odot h_{t}]+W_{h}\cdot x_{t}+b_{h})\odot z+h_{t}\odot(1−z)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+MUT 3
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $z=\sigma(W_{z}x_{t}+W_{z}\cdot tanh(h_{t})+b_{z})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r=\sigma(W_{r}x_{t}+W_{r}h_{t}+b_{r})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h_{t+1}=tanh(W_{h}[r\odot h_{t}]+W_{h}x_{t}+b_{h})\odot z+h_{t}\odot(1−z)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+An POS Tagger which can be configured to use any of the above GRU implementation
+s
+\end_layout
+
+\begin_layout Subsection
+Word Embedding
+\end_layout
+
+\begin_layout Standard
+Word embedding is representation of document vocabulary which is input to
+ the training model.Each word is converted to a vector which is capable of
+ capturing semantic and syntactic similarity, context of a word and relationship
+ of the word with other words.
+ Word2Vec is one of the famous techniques to learn word embedding.Two methods
+ for word2vec representation are: Skip Gram and Common Bag Of Words (CBOW)
+\end_layout
+
+\begin_layout Standard
+In this project, default word2vec model provided by torch is used to obtain
+ word embedding of input data.
+\end_layout
+
+\begin_layout Subsection
+Loss Function
+\end_layout
+
+\begin_layout Standard
+Loss function is used to measure error between predicted value 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ and actual label 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ It is important part of artificial neural netowrks.
+ Loss function is non-negative value and as the loss function decreases
+ the robustness of the model increase.
+ Loss function is core of empirical risk minimization.
+\end_layout
+
+\begin_layout Standard
+In this project Negative Log Likelihood loss(NLL) function is used which
+ measures the accuracy of the classifier.
+ The formula of the NLL loss function is as follows
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=-\tfrac{1}{n}\sum log(\hat{y}^{(i)})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+NLL loss function is primarly used in multi class classification and returns
+ probability of each class that a point might belong to.
+\end_layout
+
+\begin_layout Subsection
+Optimization algorithm
+\end_layout
+
+\begin_layout Standard
+Optimization algorithms are used to find optimal value of objective function,
+ which depends on model's learnable parameters.
+ These paramters are used to compute the target value from a given input.
+ Optimization algorithm try to find the parameters of the model iteratively
+ to find the optimal value of objective function.
+\end_layout
+
+\begin_layout Standard
+In this project SGD Optimizer is used to minimize the error function correspondi
+ng to each traning example.
+ This has high variance and causes the loss function to fluctuate to different
+ intensities.Alternatively, we can use Adam optimizer as minimizer( or maximizer).
+\end_layout
+
+\begin_layout Subsection
+Dataset
+\end_layout
+
+\begin_layout Standard
+In this project POS tagger is trained using Brown and Pentreebank corpus.
+\end_layout
+
+\begin_layout Enumerate
+Brown Dataset
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Brown corpus was compiled in 1960 at Brown university.
+ It is a general corpus in lingustics which contains 500 samples of english
+ language text from various categories and containing 1 million words approximat
+ely.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+PennTreebank Dataset
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+It is widely used in machine learning of NLP (Natural Language Processing)
+ research.
+ The Penn Treebank (PTB) is a collection of articles from the Wall Street
+ Journal (WSJ) over a three year of period.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Subsection
+Accuracy per epoch
+\end_layout
+
+\begin_layout Subsubsection
+PenTreebank dataset
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename s.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Accuracy/Epoch Graph for Standard GRU cell
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename m1.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Accuracy/Epoch Graph for Mutation 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename m2.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Accuracy/Epoch Graph for Mutation 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename m3.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Accuracy/Epoch Graph for Mutation 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Brown data set
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename bs.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Accuracy/Epoch Graph for Standard GRU cell
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename bm1.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Accuracy/Epoch Graph for Mutation 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename bm2.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Accuracy/Epoch Graph for Mutation 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename bm3.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Accuracy/Epoch Graph for Mutation 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comparision Results with other POS Taggers
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+We can say that GRU cell Mutation 3 performs better having 96 percent of
+ accuracy in POS Tagging Task.
+ Moreover, average performance of LSTM is 97 percent hence it performs better.
+\end_layout
+
+\begin_layout Section
+References
+\end_layout
+
+\begin_layout Enumerate
+An Empirical Exploration of Recurrent Network Architectures : Rafal Jozefowicz,
+ Wojciech Zaremba, Ilya Sutskever ; Proceedings of the 32nd International
+ Conference on Machine Learning, PMLR 37:2342-2350, 2015.
+\end_layout
+
+\begin_layout Enumerate
+CS7015: Deep Learning Lecture by Mitesh M Khapra (IIT M) https://www.cse.iitm.ac.in/
+~miteshk/CS7015.html
+\end_layout
+
+\end_body
+\end_document
