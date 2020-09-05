@@ -25,6 +25,10 @@ This project is organized into 3 folders ```literature```, ```logs```, ```report
 	├── train.py
 	└── TreeBankDataSet.py
 
+```literature``` folder contains the base research paper from which the idea is inspired.
+```logs```  folder contains generated logs for experiment.
+```report_ppt```  folder contains final report and presentation.
+
 
 
 ### Hardware requirements
@@ -37,10 +41,10 @@ We have used  ```TreeBankDataSet``` for the expermients.
 
 
 ## Code
-	```main.py``` is starting script for running the experiment
-	```train.py``` is training script
-	```pos_tagger``` architecture of generic pos_tagger
-	```gru.py``` contains architecture of GRU cell
+```main.py``` is starting script for running the experiment
+```train.py``` is training script
+```pos_tagger.py``` architecture of generic pos_tagger
+```gru.py```, contains architecture of GRU cell
 
 
 
