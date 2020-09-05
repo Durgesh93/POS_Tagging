@@ -41,10 +41,10 @@ We have used  ```TreeBankDataSet``` for the expermients.
 
 
 ## Code
-```main.py``` is starting script for running the experiment
-```train.py``` is training script
-```pos_tagger.py``` architecture of generic pos_tagger
-```gru.py```, contains architecture of GRU cell
+- ```main.py``` is starting script for running the experiment
+- ```train.py``` is training script
+- ```pos_tagger.py``` architecture of generic pos_tagger
+- ```gru.py```, contains architecture of GRU cell
 
 
 
